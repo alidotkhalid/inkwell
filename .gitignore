@@ -1,0 +1,13 @@
+# dependencies
+node_modules/
+
+# build output: never commit these. Installers go on the GitHub Releases page.
+dist/
+desktop/release/
+desktop/app/index.html
+*.exe
+
+# editor and system files
+.DS_Store
+Thumbs.db
+*.log

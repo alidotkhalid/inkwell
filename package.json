@@ -1,0 +1,25 @@
+{
+  "name": "inkwell-editor",
+  "version": "1.3.0",
+  "private": true,
+  "type": "module",
+  "description": "Inkwell: a fast PDF viewer and editor that runs entirely on your own computer",
+  "author": "Ali Khalid",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node --test --test-concurrency=1 \"tests/*.test.mjs\"",
+    "desktop": "npm run build && npm --prefix desktop start",
+    "dist": "npm --prefix desktop run dist"
+  },
+  "devDependencies": {
+    "@cantoo/pdf-lib": "2.11.1",
+    "@fontsource-variable/instrument-sans": "5.3.0",
+    "lucide-static": "1.72.0",
+    "pdfjs-dist": "6.5.438",
+    "playwright": "1.63.0"
+  }
+}
